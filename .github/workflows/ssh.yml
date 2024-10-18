@@ -1,0 +1,12 @@
+name: SSH
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ssh:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: SSH to GitHub Actions
+      uses: P3TERX/ssh2actions@v1.0.0
